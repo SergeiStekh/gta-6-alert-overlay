@@ -1,0 +1,36 @@
+:root {
+  --text-color: #ffffff;
+  --animation-style: fade-in;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#widget-container {
+  text-align: center;
+}
+
+#widget-text {
+  color: var(--text-color);
+  font-size: 3rem;
+  animation: var(--animation-style) 2s infinite;
+}
+
+/* Keyframes for animations */
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
